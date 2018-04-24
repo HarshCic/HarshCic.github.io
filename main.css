@@ -39,7 +39,7 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("https://c2.staticflickr.com/6/5208/5308016251_3eaa8dc84d_b.jpg");
+  background-image:url(back.jpeg);
   min-height: 100%;
 }
 
