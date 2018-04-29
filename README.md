@@ -24,5 +24,5 @@ preferably remote. But don't hesitate to contact me if you have questions.</h3>
 <li>Connect With me on LinkedIn - 
 https://www.linkedin.com/in/harsh-kumar-578221138</li>
 <li> Github - https://github.com/HarshCic </li>
-<li>Portfolio Link - https://harshcic.github.io/ <li>
+<li>Portfolio Link - https://harshcic.github.io/ </li>
 </ul>
