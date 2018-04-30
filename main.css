@@ -134,3 +134,9 @@ i.fa {
 #profile {
   vertical-align: middle;
 }
+#map{
+  padding: -50pc;
+}
+#address{
+padding-left: 100px;  
+}
