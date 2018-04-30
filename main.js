@@ -1,12 +1,13 @@
 // Smooth Scroll on anchor links
-function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(28.6, 77.2),
-        zoom: 10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+// function myMap() {
+//     var mapOptions = {
+//         center: new google.maps.LatLng(77.2,28.6),
+//         zoom: 10,
+//         mapTypeId: google.maps.MapTypeId.HYBRID
+//     }
+//     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+// }
+
 (function () {
 
     'use strict';
@@ -154,4 +155,15 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
+}
+function initMap() {
+    var uluru = { lat: 28.6910167, lng: 77.2141905 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
 }
