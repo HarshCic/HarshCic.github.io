@@ -1,7 +1,7 @@
 // Smooth Scroll on anchor links
 function myMap() {
     var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.12),
+        center: new google.maps.LatLng(28.6, 77.2),
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.HYBRID
     }
