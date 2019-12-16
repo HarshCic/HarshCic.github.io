@@ -1,6 +1,7 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 var selectedFile;
+  
 
 $( document ).ready(function() {
 	
@@ -9,7 +10,8 @@ $( document ).ready(function() {
 
 function handleFileSelect(event) {
 	$(".upload-group").show();
-	selectedFile = event.target.files[0];
+// 	selectedFile = event.target.files[0];
+	var selectedFile = new Blob([event.target.result], { type: "image/jpeg" });
 };
 
 
@@ -43,5 +45,7 @@ function confirmUpload() {
 	});
 
 }
+
+
 
 
