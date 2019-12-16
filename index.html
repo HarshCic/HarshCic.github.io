@@ -22,20 +22,7 @@
  
   <div class="container" id="welcome">
     <div class="row">
-      <div class="col-lg-6">
-        <h2 id="welcomeText"></h2>
-        <img src="doge.jpg" class="mainDoge">
-      </div>
-      <div class="col-lg-6" id="uploadDiv">
-        <h2>Your favorite doge:</h2> <div class="dropdown favoriteDoge">
-          <button class="btn btn-primary dropdown-toggle" id="dogDrop" type="button" data-toggle="dropdown">Floof
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Lab</a></li>
-            <li><a href="#">Terrier</a></li>
-            <li><a href="#">Floof</a></li>
-          </ul>
-        </div>
+      
         <h2>Upload Doge</h2>
           <label class="myLabel" id="inputLabel">
             <input type="file" id="upload" required/>
@@ -54,13 +41,17 @@
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script>    
     // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDzXP5nlRP_7OxexYp-9dliTXl0VJSH35k",
-      authDomain: "project-8320625648884342045.firebaseapp.com",
-      databaseURL: "https://project-8320625648884342045.firebaseio.com",
-      storageBucket: "project-8320625648884342045.appspot.com",
-    };
-    firebase.initializeApp(config);
+    var firebaseConfig = {
+    apiKey: "AIzaSyCacG4wcQTblbnIHW8AojZWP7tXI8ZE6KU",
+    authDomain: "uploadimg-aa633.firebaseapp.com",
+    databaseURL: "https://uploadimg-aa633.firebaseio.com",
+    projectId: "uploadimg-aa633",
+    storageBucket: "uploadimg-aa633.appspot.com",
+    messagingSenderId: "901891892904",
+    appId: "1:901891892904:web:bc226f17f7791e6b45049d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
   </script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Bootstrap core JavaScript
