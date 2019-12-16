@@ -1,6 +1,6 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
-var selectedFile;
+var selectedFile=event.target.files[0];
 
 
 
