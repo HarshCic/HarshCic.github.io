@@ -12,7 +12,7 @@ function handleFileSelect(event) {
 };
 
 function confirmUpload() {
-	var selectedFile = event.target.files[0];
+	var selectedFile = event.target.file;
 	var metadata = {
 		contentType: 'image',
 		customMetadata: {
