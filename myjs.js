@@ -2,7 +2,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 var selectedFile=event.target.files[0];
 
-
+var fileName=selectedFile.name;
 
 
 
@@ -21,7 +21,7 @@ function confirmUpload() {
 			'caption': $("#imgDesc").val()
 		},
 	};
-	var uploadTask = firebase.storage().ref().child('photos/' + selectedFile.name).put(selectedFile, metadata);
+	var uploadTask = firebase.storage().ref().child('photos/'+'1.jpg').put(selectedFile, metadata);
 	// Register three observers:
 	// 1. 'state_changed' observer, called any time the state changes
 	// 2. Error observer, called on failure
