@@ -1,16 +1,16 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 var selectedFile;
-
-
+var fileName;
 
 
 
 function handleFileSelect(event) {
 	$(".upload-group").show();
 	selectedFile = event.target.files[0];
+	fileName=selectedFile.name;
 };
-var fileName=selectedFile.name;
+
 function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
