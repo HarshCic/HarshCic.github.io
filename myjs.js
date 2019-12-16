@@ -11,7 +11,7 @@ $( document ).ready(function() {
 function handleFileSelect(event) {
 	$(".upload-group").show();
 // 	selectedFile = event.target.files[0];
-	var selectedFile = new Blob([event.target.result], { type: "image/jpeg" });
+	var Blob = new Blob([event.target.result], { type: "image/jpeg" });
 };
 
 
@@ -26,7 +26,7 @@ function confirmUpload() {
 			'caption': $("#imgDesc").val()
 		},
 	};
-	var uploadTask = firebase.storage().ref().child('dogImages/' + selectedFile.name).put(selectedFile, metadata);
+	var uploadTask = firebase.storage().ref().child('dogImages/' + Blob.name).put(Blob, metadata);
 	// Register three observers:
 	// 1. 'state_changed' observer, called any time the state changes
 	// 2. Error observer, called on failure
